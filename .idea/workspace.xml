@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="614a4786-b176-4493-ab74-0c1649b8313c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zenika/AgeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/zenika/AgeUtilsTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="2rOZ9vJOYeaGnonQEMdZjdDkVED" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "JUnit.AgeUtilsTest.executor": "Coverage",
+    "JUnit.RangeUtilsTest.executor": "Coverage",
+    "JUnit.RangeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange.executor": "Coverage",
+    "Maven.mutation-testing [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor": "Run",
+    "Maven.mutation-testing [test...].executor": "Run",
+    "Maven.mutation-testing [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/code/zenika/mutation-testing/src/main/java/com/zenika/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.zenika" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zenika.Main" />
+      <module name="mutation-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zenika.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgeUtilsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mutation-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zenika.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zenika" />
+      <option name="MAIN_CLASS_NAME" value="com.zenika.AgeUtilsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mutation-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zenika.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zenika" />
+      <option name="MAIN_CLASS_NAME" value="com.zenika.AgeUtilsTest" />
+      <option name="METHOD_NAME" value="isAdulte_should_return_true_when_age_is_over_18" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AgeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mutation-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zenika.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zenika" />
+      <option name="MAIN_CLASS_NAME" value="com.zenika.AgeUtilsTest" />
+      <option name="METHOD_NAME" value="isInRange_shouldReturnTrue_whenValueIsInRange" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18" />
+        <item itemvalue="JUnit.AgeUtilsTest" />
+        <item itemvalue="JUnit.AgeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="614a4786-b176-4493-ab74-0c1649b8313c" name="Changes" comment="" />
+      <created>1736431939486</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736431939486</updated>
+      <workItem from="1736431940848" duration="6000000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mutation_testing$RangeUtilsTest_isInRange_shouldReturnTrue_whenValueIsInRange.ic" NAME="RangeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange Coverage Results" MODIFIED="1736438264810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.zenika.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/mutation_testing$AgeUtilsTest.ic" NAME="AgeUtilsTest Coverage Results" MODIFIED="1736438875437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.zenika.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/mutation_testing$RangeUtilsTest.ic" NAME="RangeUtilsTest Coverage Results" MODIFIED="1736438391466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.zenika.*</FILTER>
+    </SUITE>
+  </component>
+</project>
