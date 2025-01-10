@@ -29,4 +29,16 @@ class AgeUtilsTest {
         // Then
         assertFalse(result);
     }
+
+    @Test
+    void isAdulte_should_return_true_if_age_is_18() {
+        // Given
+        int age = 18;
+
+        // When
+        boolean result = AgeUtils.isAdulte(age);
+
+        // Then
+        assertTrue(result);
+    }
 }
