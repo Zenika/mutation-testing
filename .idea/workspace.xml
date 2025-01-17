@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="614a4786-b176-4493-ab74-0c1649b8313c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/zenika/AgeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/zenika/AgeUtilsTest.java" afterDir="false" />
+    <list default="true" id="614a4786-b176-4493-ab74-0c1649b8313c" name="Changes" comment=":white_check_mark: Correct test for kill mutant">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zenika/AgeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zenika/AgeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zenika/AgeUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zenika/AgeUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,43 +26,61 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;patou&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zenika/mutation-testing.git&quot;,
+    &quot;accountId&quot;: &quot;883fda1e-4f11-4204-bf57-23e3045536cf&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2rOZ9vJOYeaGnonQEMdZjdDkVED" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.AgeUtilsTest.executor": "Coverage",
-    "JUnit.RangeUtilsTest.executor": "Coverage",
-    "JUnit.RangeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange.executor": "Coverage",
-    "Maven.mutation-testing [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor": "Run",
-    "Maven.mutation-testing [test...].executor": "Run",
-    "Maven.mutation-testing [test].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/code/zenika/mutation-testing/src/main/java/com/zenika/Main.java",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AgeUtilsTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.RangeUtilsTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.RangeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange.executor&quot;: &quot;Coverage&quot;,
+    &quot;Maven.mutation-testing [org.jacoco:jacoco-maven-plugin:0.8.12:report].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mutation-testing [org.pitest:pitest-maven:1.16.1:mutationCoverage].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mutation-testing [test...].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.mutation-testing [test].executor&quot;: &quot;Run&quot;,
+    &quot;PIT Runner.Mutation Testing.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/code/zenika/mutation-testing/src/main/java/com/zenika/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -75,7 +89,7 @@
       <recent name="com.zenika" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18">
+  <component name="RunManager" selected="PIT Runner.Mutation Testing">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zenika.Main" />
       <module name="mutation-testing" />
@@ -136,6 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Mutation Testing" type="PIT" factoryName="PIT Runner" REPORT_DIR="$PROJECT_DIR$/target/report" SOURCE_DIRS="$PROJECT_DIR$/src/main/java" TARGET_CLASSES="com.zenika.*" TARGET_TESTS="" otherParams="--outputFormats HTML">
+      <module name="mutation-testing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.AgeUtilsTest" />
+      <item itemvalue="JUnit.AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18" />
+      <item itemvalue="JUnit.AgeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange" />
+      <item itemvalue="Maven.Run test with coverage" />
+      <item itemvalue="PIT Runner.Mutation Testing" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18" />
@@ -148,8 +176,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
       </set>
     </attachedChunks>
   </component>
@@ -162,17 +190,43 @@
       <option name="presentableId" value="Default" />
       <updated>1736431939486</updated>
       <workItem from="1736431940848" duration="6000000" />
+      <workItem from="1736517650713" duration="3619000" />
+      <workItem from="1736756570752" duration="1009000" />
+      <workItem from="1736759755219" duration="1894000" />
+      <workItem from="1736937698034" duration="576000" />
+      <workItem from="1737039196547" duration="1474000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":hammer: Ajout du plugin Pitest" />
+    <MESSAGE value=":hammer: Ajout du plugin Pitest" />
+    <MESSAGE value=":white_check_mark: Corrige les tests pour tuer le mutant" />
+    <MESSAGE value=":white_check_mark: Corrige les tests pour tuer le mutant" />
+    <option name="LAST_COMMIT_MESSAGE" value=":white_check_mark: Corrige les tests pour tuer le mutant" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mutation_testing$RangeUtilsTest_isInRange_shouldReturnTrue_whenValueIsInRange.ic" NAME="RangeUtilsTest.isInRange_shouldReturnTrue_whenValueIsInRange Coverage Results" MODIFIED="1736438264810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.zenika.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/mutation_testing$AgeUtilsTest.ic" NAME="AgeUtilsTest Coverage Results" MODIFIED="1736438875437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+    <SUITE FILE_PATH="coverage/mutation_testing$AgeUtilsTest_isAdulte_should_return_true_when_age_is_over_18.ic" NAME="AgeUtilsTest.isAdulte_should_return_true_when_age_is_over_18 Coverage Results" MODIFIED="1736439168569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>com.zenika.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/mutation_testing$AgeUtilsTest.ic" NAME="AgeUtilsTest Coverage Results" MODIFIED="1736513322247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
       <FILTER>com.zenika.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/mutation_testing$RangeUtilsTest.ic" NAME="RangeUtilsTest Coverage Results" MODIFIED="1736438391466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">

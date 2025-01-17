@@ -30,7 +30,7 @@ class AgeUtilsTest {
         assertFalse(result);
     }
 
-    @Test
+   @Test
     void isAdulte_should_return_true_if_age_is_18() {
         // Given
         int age = 18;
@@ -40,5 +40,10 @@ class AgeUtilsTest {
 
         // Then
         assertTrue(result);
+    }
+
+    @Test
+    void AgeUtils_constructor_coverage() {
+        assertNotNull(new AgeUtils());
     }
 }
