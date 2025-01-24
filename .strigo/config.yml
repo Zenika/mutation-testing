@@ -11,9 +11,9 @@ classes:
           ami_region_mapping:
             eu-west-1:
               image_id: "ami-0b32f4a77e48fcb24"
-        user_data:
-          - "#!/bin/bash"
-          - "echo 'Hello, World!' > /tmp/hello.txt"
+        user_data: >
+            #!/bin/bash
+            echo 'Hello, World!' > /tmp/hello.txt
     exercises:
       - file: "../codelab/lab1.md"
         title: "Lab 1 : Mettre en place le Mutation Testing"
