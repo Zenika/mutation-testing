@@ -106,7 +106,7 @@ Regarder le rapport de mutation dans le fichier `target/pit-reports/index.html`.
 
 ### 5. Corriger les tests
 
-Corrigez les tests unitaires pour passer le mutation testing à 100%.
+Corrigez les tests unitaires pour passer la mutation testing à 100%.
 
 ### 6. Relancer les tests et récupérer le rapport de couverture
 
