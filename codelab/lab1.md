@@ -1,5 +1,5 @@
 # Lab 1 : Mettre en place le mutation testing
-Duration: 00:30:00
+Duration: 00:10:00
 
 ## Objectifs
 Créer un projet Maven simple et mettre en place le mutation testing avec PIT.
@@ -15,9 +15,18 @@ Créer un projet Maven simple et mettre en place le mutation testing avec PIT.
 
 ### 1. Créer un projet Maven simple
 
-Créez un projet Maven simple avec une classe à tester et une classe de test.
-Exécutez la commande suivante pour créer un projet Maven simple :
 
+Ouvrez Intellij et créez un nouveau projet Java en utilisant Maven : 
+
+![Créer un projet Maven](assets/new-projects.png)
+
+- File > New > Project...
+- Sélectionnez Maven dans la liste des projets
+- Utiliser le JDK 21 (installé sur la machine dans C:\Program Files\OpenJSK\jdk-21)
+- Nommez votre projet `mutation-testing`
+- Cliquez sur Create
+
+ou créez le projet à la main :
 ```shell
 mvn archetype:generate -DgroupId=com.zenika -DartifactId=mutation-testing -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
@@ -150,6 +159,15 @@ Ajoutez la dépendance PIT dans le `pom.xml` :
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
                 <version>1.16.1</version>
+                <executions>
+                    <execution>
+                        <id>pit-report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>mutationCoverage</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <dependencies>
                     <dependency>
                         <groupId>org.pitest</groupId>
@@ -165,10 +183,10 @@ Ajoutez la dépendance PIT dans le `pom.xml` :
 
 ### 6. Exécuter PIT
 
-Lancez PIT avec la commande suivante :
+Lancez PIT avec avec maven test dans intellij ou avec la commande suivante :
 
 ```shell
-mvn pitest:mutationCoverage
+mvn test
 ```
 
 ### 7. Analyser les résultats

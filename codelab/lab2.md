@@ -1,5 +1,5 @@
 # Lab 2 : FizzBuzz
-Duration: 00:30:00
+Duration: 00:10:00
 
 ## Objectifs
 Ajouter une nouvelle classe avec des tests unitaires et les corriger pour passer la mutation testing.
@@ -96,10 +96,10 @@ On doit avoir 100% de couverture de code.
 
 ### 4. Comprendre les erreurs de mutation
 
-Exécutez la commande suivante pour lancer le mutation testing :
+Lancez PIT avec avec maven test dans intellij ou avec la commande suivante :
 
 ```shell
-mvn pitest:mutationCoverage
+mvn test
 ```
 
 Regarder le rapport de mutation dans le fichier `target/pit-reports/index.html`.
