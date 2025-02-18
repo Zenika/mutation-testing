@@ -2,7 +2,7 @@
 Duration: 00:10:00
 
 ## Objectifs
-Ajouter une nouvelle classe avec des tests unitaires et les corriger pour passer le mutation testing.
+Ajouter une nouvelle classe avec des tests unitaires et les corriger pour passer la mutation testing.
 
 ## Étapes
 1. Ajouter une classe `FizzBuzz` avec
@@ -106,11 +106,11 @@ Regarder le rapport de mutation dans le fichier `target/pit-reports/index.html`.
 
 ### 5. Corriger les tests
 
-Corrigez les tests unitaires pour passer le mutation testing à 100%.
+Corrigez les tests unitaires pour passer la mutation testing à 100%.
 
 ### 6. Relancer les tests et récupérer le rapport de couverture
 
-Relancez les tests et regardez le rapport de couverture pour vérifier que le mutation testing est à 100%.
+Relancez les tests et regardez le rapport de couverture pour vérifier que la mutation testing est à 100%.
 
 
 

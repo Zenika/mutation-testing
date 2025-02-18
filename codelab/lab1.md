@@ -15,6 +15,7 @@ Créer un projet Maven simple et mettre en place le mutation testing avec PIT.
 
 ### 1. Créer un projet Maven simple
 
+
 Ouvrez Intellij et créez un nouveau projet Java en utilisant Maven : 
 
 ![Créer un projet Maven](assets/new-projects.png)
@@ -26,7 +27,6 @@ Ouvrez Intellij et créez un nouveau projet Java en utilisant Maven :
 - Cliquez sur Create
 
 ou créez le projet à la main :
-
 ```shell
 mvn archetype:generate -DgroupId=com.zenika -DartifactId=mutation-testing -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
@@ -193,11 +193,11 @@ mvn test
 
 Ouvrez le rapport de mutation testing dans le répertoire `target/pit-reports/index.html`.
 
-On voit que l'on est pas à 100% de mutation coverage. Cela signifie que notre classe de test n'est pas assez robuste.
+On voit que l'on n'est pas à 100% de mutation coverage. Cela signifie que notre classe de test n'est pas assez robuste.
 
 En particulier, la mutation `age >= 18` qui est remplacée par `age > 18` n'est pas détectée par nos tests.
 
-Nous pouvons remarqué que nous n'avons pas de tests pour le cas où `age == 18`.
+Nous pouvons remarquer que nous n'avons pas de tests pour le cas où `age == 18`.
 
 Ajoutez un test pour ce cas et relancez PIT pour vérifier que la mutation est bien détectée.
 
