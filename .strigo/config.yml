@@ -1,6 +1,6 @@
 ---
 classes:
-    exercises:
+  - exercises:
       - file: "../codelab/lab1.md"
         title: "Lab 1 : Mettre en place le Mutation Testing"
         syntax: "md-extended"
