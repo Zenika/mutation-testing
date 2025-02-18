@@ -1,7 +1,7 @@
 package com.zenika;
 
-public class BubbleSortOptimized {
-    public static void sort(int[] arr) {
+public class BubbleSort {
+    public void sort(int[] arr) {
         boolean swapped;
         for (int i = 0; i < arr.length - 1; i++) {
             swapped = false;
