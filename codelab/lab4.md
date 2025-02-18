@@ -6,7 +6,7 @@ Utiliser un projet réel avec Spring et des tests
 
 ## 1.1 Récupération du projet
 
-- git clone https://github.com/Zenika-Training/codelab-mutation-testing.git
+- git clone https://github.com/Zenika/codelab-mutation-testing
 - Importez le projet se trouvant dans le répertoire challenges/application-hexa dans votre IDE préféré
   IntelliJ / VSCode / Eclipse...
 - Configurez le projet pour utiliser JDK 21
