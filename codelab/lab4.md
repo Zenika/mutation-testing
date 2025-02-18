@@ -20,7 +20,7 @@ Parcourez le projet pour comprendre son organisation.
 
 <div class="pb"></div>
 
-Dans le répertoire target/site ouvrez le rapport de test de Jaccoco ![rapport_jaccoco.png](../images/rapport_jaccoco.png)
+Dans le répertoire target/site ouvrez le rapport de test de Jaccoco ![rapport_jaccoco.png](assets/rapport_jaccoco.png)
 
 ## 1.3 Ajouter la dépendance PIT
 
@@ -90,7 +90,7 @@ De plus en fonction de l'erreur, cela devra déclencher un handler qui fabriquer
 
 Pour faciliter l'analyse de l'erreur, il est donc nécessaire de s'assurer que toutes les informations sont présentes.
 
-![exception.png](../images/exception.png)
+![exception.png](assets/exception.png)
 
 Les mutations qui continuent à exister sont des mutations sont des mutations de substitutions et des mutations d'appel
 de méthodes
@@ -121,14 +121,14 @@ Par exemple, pour calculer le chiffre d'affaire nous devons filtrer la source de
 
 ### 1.4.2.1 TicketService
 
-![ticketService.png](../images/ticketService.png)
+![ticketService.png](assets/ticketService.png)
 
 Deux choses doivent nous alerter, les mutations continuent à exister car :
 
 * deux méthodes ne sont pas testés
 * un test une partie n'est pas couverte.
 
-![ticketService.png](../images/ticketService.png)
+![ticketService.png](assets/ticketService.png)
 
 La méthode signum de BigDecimal retourne 3 possibilités soit -1, 0, ou 1.
 Dans les tests présents on test que -1 ou 1, **il nous manque donc 1 cas**.
@@ -138,7 +138,7 @@ ce niveau.
 
 ### 1.4.2.2 CalculCAPortService
 
-![calculCA.png](../images/calculCA.png)
+![calculCA.png](assets/calculCA.png)
 
 La partie qui pose problème est assez intéressante car il s'agit d'un moteur de calcul.
 De plus le résultat est exposé directement à l'utilisateur final.
@@ -160,7 +160,7 @@ l'utilisateur
 
 Ce que l'on voit dans le rapport Pit dans le body du message http qui n'est pas testé en particulier le code http.
 
-![handler.png](../images/handler.png)
+![handler.png](assets/handler.png)
 
 ## 1.6 Analysons la partie adaptor
 
@@ -168,7 +168,7 @@ La classe adaptor est une classe qui va transformer la donnée fournit par notre
 domaine
 métier.
 
-![ticketRepositoryAdaptor.png](../images/ticketRepositoryAdaptor.png)
+![ticketRepositoryAdaptor.png](assets/ticketRepositoryAdaptor.png)
 
 En général, ce qui manque se sont des tests de contrôle sur la sortie.
 
