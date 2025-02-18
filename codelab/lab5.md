@@ -106,4 +106,14 @@ mvn test
 
 ### 4. Impossible de trouver des tests pour passer le mutation testing
 
-Si vous essayez de trouver le code 
+On remarque dans le résultat que deux lignes résistent à la mutation testing :
+
+![Mutation testing Bubble Sort result](./assets/bubble-sort-result.png)
+
+La première boucle for exécute X fois la deuxième boucle, or les mutations faites sur cette boucle (par exemple enlever le -1 ou remplacer le + par le moins) ne sont pas détectées par les tests unitaires car dans tous les cas la boucle s'arrête quand tous les éléments sont triés.
+
+La ligne `if (arr[j] > arr[j + 1])` quand elle va être mutée avec un `>=` cela fera simplement des permutations inutile mais sans changer le résultat final.
+
+Pour pouvoir tuer les mutants, il est nécessaire de modifier notre code pour retourner le nombre de fois que l'algorithme a trié le tableau (le nombre de fois que la première boucle a été exécutée).
+
+On peut alors dans nos tests ajouter des conditions sur le nombre de fois que l'on exécute la boucle et ainsi supprimer.

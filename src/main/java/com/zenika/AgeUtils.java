@@ -1,9 +1,9 @@
 package com.zenika;
 
 public class AgeUtils {
-    AgeUtils() {}
+    public AgeUtils() {}
 
-    static boolean isAdulte(int age) {
+    public static boolean isAdulte(int age) {
         return age >= 18;
     }
 }

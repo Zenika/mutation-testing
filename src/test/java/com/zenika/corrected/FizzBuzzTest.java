@@ -1,11 +1,13 @@
-package com.zenika;
+package com.zenika.corrected;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import com.zenika.FizzBuzz;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class FizzBuzzTest {
+class FizzBuzzCorrectedTest {
     FizzBuzz fizzBuzz;
 
     @BeforeEach
@@ -19,24 +21,24 @@ class FizzBuzzTest {
         int number = 3;
 
         // When
-        fizzBuzz.getResult(number);
+        var result = fizzBuzz.getResult(number);
 
         // Then
-        assertTrue(true);
+        assertEquals("Fizz", result);
     }
 
     @Test
     void should_return_Buzz_when_number_is_divisible_by_5() {
-        assertNotNull(fizzBuzz.getResult(5));
+        assertEquals("Buzz", fizzBuzz.getResult(5));
     }
 
     @Test
     void should_return_FizzBuzz_when_number_is_divisible_by_15() {
-        assertEquals(0, fizzBuzz.getResult(15).length() % 2);
+        assertEquals("FizzBuzz", fizzBuzz.getResult(15));
     }
 
     @Test
     void should_return_number_when_number_is_not_divisible_by_3_or_5() {
-        assertEquals(String.class, fizzBuzz.getResult(1).getClass());
+        assertEquals("1", fizzBuzz.getResult(1));
     }
 }
