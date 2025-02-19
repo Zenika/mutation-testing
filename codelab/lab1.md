@@ -183,7 +183,7 @@ Ajoutez la dépendance PIT dans le `pom.xml` :
 
 ### 6. Exécuter PIT
 
-Lancez PIT avec avec maven test dans intellij ou avec la commande suivante :
+Lancez PIT avec maven test dans intellij ou avec la commande suivante :
 
 ```shell
 mvn test
