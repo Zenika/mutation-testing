@@ -7,9 +7,8 @@ Utiliser un projet réel avec Spring et des tests
 ## 1.1 Récupération du projet
 
 - git clone https://github.com/Zenika/codelab-mutation-testing
-- Importez le projet se trouvant dans le répertoire challenges/application-hexa dans votre IDE préféré
-  IntelliJ / VSCode / Eclipse...
-- Configurez le projet pour utiliser JDK 21
+- Importez le projet avec votre IDE
+- Configurez le projet pour utiliser JDK 21 (si nécessaire)
 - Construisez le projet avec `mvn clean install`
 
 **Si vous rencontrez des erreurs, demandez immédiatement de l'aide à votre formateur !**
@@ -56,7 +55,7 @@ Ajoutez la dépendance PIT dans le `pom.xml` du projet 'application-hexa:
 Lancez PIT avec la commande suivante :
 
 ```shell
-mvn pitest:mutationCoverage
+mvn test
 ```
 
 ## 1.4 Analyser les résultats
@@ -77,7 +76,7 @@ Enhanced functionality available at https://www.arcmutate.com/
 
 ```
 
-![rapport_pit.png](images/rapport_pit.png)
+![rapport_pit.png](assets/rapport_pit.png)
 
 Le package *adaptator*, *service*, exception, *handler* ne semble pas avoir une couverture suffisamment forte pour PI.
 Ces packages sont importants car elles portent soit la logique métier du domaine, soit la logique de transformation
@@ -92,8 +91,11 @@ Pour faciliter l'analyse de l'erreur, il est donc nécessaire de s'assurer que t
 
 ![exception.png](assets/exception.png)
 
-Les mutations qui continuent à exister sont des mutations sont des mutations de substitutions et des mutations d'appel
+Les mutations qui continuent à exister sont des mutations de substitutions et des mutations d'appel
 de méthodes
+
+Les tests suivants **'TicketControllerTest.bad_data_quality_not_expected'** et dans **'ControllerExceptionHandlerTest.test_handler_exception_error_50x'**
+ne sont pas suffisant qu'est ce qui manque pour qu'il soit complet.
 
 ## 1.4.2 Analysons la partie service
 
@@ -143,15 +145,23 @@ ce niveau.
 La partie qui pose problème est assez intéressante car il s'agit d'un moteur de calcul.
 De plus le résultat est exposé directement à l'utilisateur final.
 
-La ligne qui pose problème a pour objectif de construire une liste de tuple et chaque tuple est objet qui nous donne le
+La ligne qui pose problèmes a pour objectif de construire une liste de tuple et chaque tuple est objet qui nous donne le
 CA par caisse.
+
+Alors que le rapport Jacocco nous affirme qu'on a 100% de couverture.
+![rapport_jacocco_calcul.png](assets/rapport_jacocco_calcul.png)
+
 
 Deux problèmes existent:
 
-* à partir d'une lambda on construit une map à partir d'une liste. L'input de la map ets le problème
+* à partir d'une lambda on construit une map à partir d'une liste. L'input de la map est le problème
 * dans la méthode compute, la méthode filter semble poser un problème et la sortie de la méthode n'est pas aussi testée
+  Aller dans le test 'CalculCAPortServiceTest' pour corriger les problèmes.
 
-Aller dans le test 'CalculCAPortServiceTest' pour corriger les problèmes
+**Remarque:**
+
+Il est toujours intéressant de tester les valeurs par défaut qui peuvent être retournées (car on pourrait avoir un service
+qui utilise uun fallback si la source de données est indisponible).
 
 ## 1.5 Analysons la partie handler d'exception sur la partie Rest
 
@@ -164,13 +174,17 @@ Ce que l'on voit dans le rapport Pit dans le body du message http qui n'est pas 
 
 ## 1.6 Analysons la partie adaptor
 
-La classe adaptor est une classe qui va transformer la donnée fournit par notre provider (ici une BDD) en une objet du
-domaine
-métier.
+La classe adaptor est une classe qui va transformer la donnée fournit par notre provider (ici une BDD) en un objet du
+domaine métier.
 
 ![ticketRepositoryAdaptor.png](assets/ticketRepositoryAdaptor.png)
 
 En général, ce qui manque se sont des tests de contrôle sur la sortie.
 
 
+## Conclusion
 
+PIT a permis de mettre en évidence:
+- des tests qui n'étaient pas complets
+- une règle de calcul qui aurait pû être simplifié
+- complète les tests unitaires ne remplace pas les tests d'intégration 
